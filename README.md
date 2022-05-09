@@ -1,2 +1,2 @@
-# ecslab
+# ecs-lab
 ecs lab with cicd
