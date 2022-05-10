@@ -1,0 +1,24 @@
+{
+    "executionRoleArn": "arn:aws:iam::563781936732:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "ecslab2",
+            "image": "<IMAGE1_NAME>",
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 0,
+                    "protocol": "tcp",
+                    "containerPort": 80
+                }
+            ]
+        }
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "networkMode": "bridge",
+    "cpu": "512",
+    "memory": "512",
+    "family": "ecs-demo"
+}
